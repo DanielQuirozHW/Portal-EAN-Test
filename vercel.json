@@ -19,7 +19,10 @@
         { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains; preload" },
         { "key": "Access-Control-Allow-Origin", "value": "https://danielq.cloud" },
         { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" },
+        { "key": "Server", "value": "" },
+        { "key": "X-Vercel-Id", "value": "" },
+        { "key": "X-Vercel-Cache", "value": "" }
       ]
     }
   ]
