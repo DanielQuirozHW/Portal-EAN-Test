@@ -1,0 +1,129 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"); */
+@font-face {
+  font-family: 'Montserrat';
+  /* src: url(./fonts/Montserrat-Regular.ttf); */
+  src: url(../../src/fonts/Montserrat-Regular.ttf);
+}
+html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Montserrat', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+code[class*='language-'] {
+  padding: 0;
+}
+
+.fc-day-grid .fc-row .fc-content-skeleton {
+  height: 50px!important;
+}
+
+.fc-day-grid .fc-row .fc-content-skeleton table {
+  height: 50px!important;
+}
+#__next > div.layout-wrapper.css-uinsfl > div.layout-content-wrapper.MuiBox-root.css-34b9xr > main > div > div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.css-5cvfa3-MuiGrid-root{
+  padding-top:0;
+}
+
+
+/* Estilos del calendario */
+.bg-custom-green {
+  background-color: rgba(40, 167, 69, 0.5); /* Verde con 50% de transparencia */
+  border-color:rgba(40, 167, 69, 0.5);
+}
+
+.bg-custom-red {
+  background-color: rgba(220, 53, 69, 0.5); /* Rojo con 50% de transparencia */
+  border-color:rgba(220, 53, 69, 0.5);
+}
+
+.bg-custom-yellow {
+  background-color: rgba(255, 193, 7, 0.5); /* Amarillo con 50% de transparencia */
+  border-color:rgba(255, 193, 7, 0.5);
+}
+
+.bg-custom-turquoise {
+  background-color: rgba(23, 162, 184, 0.5); /* Turquesa con 50% de transparencia */
+  border-color:rgba(23, 162, 184, 0.5);
+}
+
+.bg-custom-orange {
+  background-color: rgba(232, 111, 59, 0.5); /* Naranja con 50% de transparencia */
+  border-color:rgba(232, 111, 59, 0.5);
+}
+.bg-custom-azul {
+  background-color: rgba(59, 99, 232, 0.5); /* Naranja con 50% de transparencia */
+  border-color:rgba(59, 99, 232, 0.5);
+}
+.bg-custom-purple {
+  background-color: rgba(128, 0, 128, 0.5);
+  border-color:rgba(128, 0, 128, 0.5) ;
+}
+.bg-custom-custom {
+  background-color: rgba(181, 146, 236, 0.5);
+  border-color:rgba(181, 146, 236, 0.5) ;
+}
+.bg-custom-blue {
+  background-color: rgba(0, 0, 255, 0.4); /* Azul con 50% de transparencia */
+  border-color:rgba(0, 0, 255, 0.4);
+}
+
+.fc-event-title-container{
+  font-size: .7rem;
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el área de seguimiento */
+::-webkit-scrollbar-track {
+  background: #F1F2F4; /* Color del área de seguimiento */
+  border-radius: 20px;
+}
+
+/* Estilo para la barra de desplazamiento en sí misma */
+::-webkit-scrollbar-thumb {
+  background-color: #073824; /* Color de la barra de desplazamiento */
+  border-radius: 20px; /* Redondez de la barra de desplazamiento */
+  border: 3px solid #F1F2F4; /* Crea un padding alrededor de la barra de desplazamiento */
+}
+
+.centered-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.react-hot-toast {
+  z-index: 1400 !important
+}
+
+#__next > div.layout-wrapper.css-uinsfl > div.layout-content-wrapper.MuiBox-root.css-34b9xr > main > div > div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.css-1idn90j-MuiGrid-root > div > div > div.MuiTabs-root.css-y40fxh-MuiTabs-root {
+  padding-left: 0;
+}
+
+.fc .fc-button-active {
+  background-color: rgb(4 147 128) !important;
+  color: white !important;
+}
+
+.fc .fc-button:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: gray !important;
+}
