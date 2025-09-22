@@ -120,7 +120,7 @@ const PerfilHeader = ({empleado}) => {
         <input
           type="file"
           accept="image/png, image/jpg, image/jpeg"
-          style={{ display: "none" }}
+          hidden
           onChange={handleCoverPictureChange}
           id="cover-picture-input"
         />
@@ -172,7 +172,7 @@ const PerfilHeader = ({empleado}) => {
           <input
             type="file"
             accept="image/png, image/jpg, image/jpeg"
-            style={{ display: "none" }}
+            hidden
             onChange={handleProfilePictureChange}
             id="profile-picture-input"
           />

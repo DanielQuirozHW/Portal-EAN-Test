@@ -37,8 +37,13 @@ const DownloadFile = ({ id }) => {
   return (
     <Box component="div" textAlign="center">
       <Tooltip title={<Typography sx={{ color: "inherit" }}>Descargar</Typography>}>
-        <IconButton color="info" aria-label="Descargar" onClick={() => downloadBase64File(type, base64, fileName)}>
-          <Icon icon="ic:baseline-cloud-download"  style={{ fontSize: 30, color:`${theme.palette.customColors.icono}` }} />
+        <IconButton
+          color="info"
+          aria-label="Descargar"
+          onClick={() => downloadBase64File(type, base64, fileName)}
+          sx={{ '& svg': { fontSize: 30, color: theme.palette.customColors.icono, cursor: 'pointer' } }}
+        >
+          <Icon icon="ic:baseline-cloud-download" />
         </IconButton>
       </Tooltip>
     </Box>

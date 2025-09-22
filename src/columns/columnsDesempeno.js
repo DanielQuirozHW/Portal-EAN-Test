@@ -205,8 +205,13 @@ export const COLUMNS_RESULTADO_GLOBAL = [
       (params.row.annotations && params.row.annotations.length > 0) ?
       (
         <Tooltip title={<Typography sx={{ color: "inherit" }}>Informe</Typography>}>
-          <IconButton color="info" aria-label="Descargar" onClick={() => handleDownload(params.row.annotations)}>
-            <Icon icon="mdi:file-download-outline" style={{ fontSize: 30, color:"info", cursor: "pointer" }} />
+          <IconButton
+            color="info"
+            aria-label="Descargar"
+            onClick={() => handleDownload(params.row.annotations)}
+            sx={{ '& svg': { fontSize: 30, cursor: 'pointer' } }}
+          >
+            <Icon icon="mdi:file-download-outline" />
           </IconButton>
         </Tooltip>
       )
