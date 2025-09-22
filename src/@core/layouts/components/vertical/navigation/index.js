@@ -26,7 +26,6 @@ import VerticalNavHeader from "./VerticalNavHeader";
 import themeOptions from "../../../../theme/ThemeOptions";
 
 // ** Util Import
-import Image from "next/image";
 import { hexToRGBA } from "../../../../utils/hex-to-rgba";
 import logoBlanco from "../../../../../../public/images/Web_Portal_blanco.svg";
 import logoNegro from "../../../../../../public/images/Web Portal Black.svg";
@@ -76,6 +75,9 @@ const Navigation = (props) => {
     afterVerticalNavMenuContentPosition,
     beforeVerticalNavMenuContentPosition,
   } = themeConfig;
+
+  const logoBlancoSrc = typeof logoBlanco === 'string' ? logoBlanco : logoBlanco.src
+  const logoNegroSrc = typeof logoNegro === 'string' ? logoNegro : logoNegro.src
 
   const navMenuContentProps = {
     ...props,
@@ -213,14 +215,11 @@ const Navigation = (props) => {
               transition: 'width .3s ease-in-out',
             }}
           >
-            <Image
-              src="/images/Meli.png"
+            <Box
+              component="img"
               alt="Abeja"
-              width={200}
-              height={200}
-              sizes="(max-width:600px) 72px, (max-width:900px) 88px, (max-width:1200px) 120px, 150px"
-              style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
-              priority
+              src="/images/Meli.png"
+              sx={{ width: '100%', height: 'auto', objectFit: 'contain' }}
             />
           </Box>
           {afterNavMenuContent &&
@@ -241,9 +240,9 @@ const Navigation = (props) => {
               }}
             >
               {settings.mode === "dark" ? (
-                <Image src={logoBlanco} width={150} alt="logo" />
+                <Box component="img" src={logoBlancoSrc} width={150} alt="logo" />
               ) : (
-                <Image src={logoNegro} width={150} alt="logo" />
+                <Box component="img" src={logoNegroSrc} width={150} alt="logo" />
               )}
             </Box>
           )}

@@ -234,10 +234,10 @@ const HorizontalNavGroup = props => {
             </ListItem>
             <AnimationWrapper {...(horizontalMenuAnimation && { in: menuOpen, timeout: { exit: 300, enter: 400 } })}>
               <Box
-                style={styles.popper}
                 ref={setPopperElement}
                 {...attributes.popper}
                 sx={{
+                  ...styles.popper,
                   zIndex: theme.zIndex.appBar,
                   ...(!horizontalMenuAnimation && { display: menuOpen ? 'block' : 'none' }),
                   pl: childMenuGroupStyles() === 'left' ? (skin === 'bordered' ? 2.5 : 2.25) : 0,

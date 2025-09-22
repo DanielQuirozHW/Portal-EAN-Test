@@ -6,14 +6,12 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { AuthContext } from "@/context/AuthContext";
 import { useTheme } from "@emotion/react";
-import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Index = () => {
   const theme = useTheme();
   const { user } = useContext(AuthContext);
   const isMobileL = useMediaQuery("(max-width:425px)");
-  const isMobile = useMediaQuery("(max-width:768px)");
 
   return (
     <Box
@@ -26,13 +24,19 @@ const Index = () => {
         overflow: "hidden",
       }}
     >
-      <Image
-        src="/images/2.jpg"
+      <Box
+        component="img"
         alt="Campus Background"
-        layout="fill"
-        objectFit= "cover" // ✅ CAMBIO CLAVE
-        objectPosition={isMobileL ? "center left" : "left center"}
-        style={{ zIndex: 1 }}
+        src="/images/2.jpg"
+        sx={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: isMobileL ? "center left" : "left center",
+          zIndex: 1,
+        }}
       />
       <Box
         sx={{
