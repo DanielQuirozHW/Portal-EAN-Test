@@ -274,7 +274,7 @@ const handleLogin = async (params) => {
           "<order attribute='new_name' descending='false'/>" +
           "<filter type='and'>" +
           `<condition attribute='new_correoelectronico' operator='eq' value='${user.email}'/>` +
-          `<condition attribute='new_tieneusuarioportalalumno' operator='eq' value='true'/>` +
+          `<condition attribute='new_tieneusuarioportalalumno' operator='eq' value='1'/>` +
           "</filter>" +
           "</entity>";
 
